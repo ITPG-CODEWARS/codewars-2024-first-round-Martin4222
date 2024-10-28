@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Снимки</title>
+    <style>
+        .vlak {
+            padding: 10px 25px;
+            background: #16c7bb;
+            color: rgb(108, 5, 79);
+            border: none; /* Fixed border property */
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    
+        .vlak:hover {
+            background: #ab58b4;
+            box-shadow: 0 5px 15px rgba(255, 105, 135, 0.4);
+        }
+    
+        body {
+            background-color: rgb(138, 146, 147);
+            margin: 0; 
+        }
+    
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+        }
+    
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap; 
+            padding: 10px; 
+        }
+    
+        .gallery img {
+            max-width: 480px; 
+            height: auto; 
+            border-radius: 10px;
+            flex: 1 1 auto; 
+            max-height: 300px; 
+        }
+    
+        
+        @media (max-width: 768px) {
+            .vlak {
+                font-size: 1rem; 
+                position: relative;
+                margin-top:60px;
+            }
+    
+            h1 {
+                font-size: 1.5rem; 
+            }
+    
+            .gallery img {
+                max-width: 100%; 
+            }
+        }
+    
+        @media (max-width: 480px) {
+            .vlak {
+                font-size: 0.9rem; 
+            }
+    
+            h1 {
+                font-size: 1.2rem; 
+            }
+        }
+    </style>
+    
+</head>
+<body>
+
+<h1>Снимки на The Transcontinental </h1>
+<div class="gallery">
+    
+   
+    
+   
+    <img src="Snimki/tt2.jpg" alt="Снимка 1">
+    <img src="Snimki/tt1.jpg" alt="Снимка 2">
+    <img src = "Snimki/tt3.jpg" alt= "Снимка 3">
+<a href="vlak2.html">
+    <button class="vlak" >Назад</button>
+    </a>
+    </div>
+
+</body>
+</html>
