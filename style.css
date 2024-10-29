@@ -2,7 +2,10 @@ body {
     background-color: #8b93bd;
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color:#333
+   
 }
 
 
@@ -52,7 +55,7 @@ h1, h2 {
 }
 
 .trains-card p {
-    color: #666;
+    color: #000000;
     margin-bottom: 60px;
     padding: 0 10px;
 }
@@ -79,16 +82,14 @@ h1, h2 {
     left: 40%;
 }
 
-.snm2 {
-    left: 60%;
-}
+
 p {
-    text-shadow: 2px 2px 4px rgb(109, 102, 102);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgb(101, 97, 97);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(0, 0, 0);
     margin: 0;
 }
-.vlak, .snm2,  .snm3, .snm4 {
+.vlak,  .snm{
     padding: 10px 25px;
     background: #16c7bb;
     color: rgb(108, 5, 79);
@@ -101,11 +102,13 @@ p {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+    text-align: center;
 }
 
-.vlak:hover, .snm2:hover,  .snm3:hover, .snm4:hover{
+.vlak:hover,  .snm:hover {
     background: #ab58b4;
     box-shadow: 0 5px 15px rgba(255, 105, 135, 0.4);
+    text-align: center;
 }
 
 
@@ -140,28 +143,47 @@ p {
     .trains-card h3 {
         font-size: 1.5rem;
     }
-    .snm2 {
-        left:50%;
-        margin-top: 10px;
-        position: relative;
-        margin-top: 10px;
+
+   .center{
+    text-align: justify;
+    margin: 5px;
+   }
     }
-    .more, .vlak, .index, .snm2 {
-        padding: 8px 20px;
-        font-size: 1rem;
+    
+    .index, .snm {
+        padding: 10px 25px;
+        background: #16c7bb;
+        color: rgb(108, 5, 79);
+        border: none; 
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        margin: 5px;
+        display: flex;
+        
+    }
+    
+    .index:hover, .snm:hover {
+        background: #ab58b4;
+        box-shadow: 0 5px 15px rgba(255, 105, 135, 0.4);
+        
+        
+        
     }
     
     
     h1 {
         font-size: 1.5rem;
     }
-}
 
-@media (max-width: 480px) {
+
+@media (max-width: 480px)
+{
     .trains-card h3 {
         font-size: 1.3rem;
     }
-   .index, .snm2 {
+   .index, .snm {
     font-size: 0.9rem;
     position: relative;
     margin-top: 60px;
